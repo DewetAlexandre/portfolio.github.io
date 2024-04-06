@@ -6,6 +6,24 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Bonjour</h1>
+    <div>
+        Présentation de moi
+    </div>
+    <div id="app" class="min-h-screen flex flex-col">
+        <div class="bg-gray-200 py-4">
+          <!-- Barre de navigation -->
+          <nav class="flex justify-center space-x-4">
+            <button id="presentationBtn" class="btn" onclick="handleTabChange('presentation')">Présentation</button>
+            <button id="aboutMeBtn" class="btn" onclick="handleTabChange('aboutMe')">À propos de moi</button>
+            <button id="cvBtn" class="btn" onclick="handleTabChange('cv')">CV</button>
+            <button id="projectsBtn" class="btn" onclick="handleTabChange('projects')">Projets</button>
+            <button id="interestsBtn" class="btn" onclick="handleTabChange('interests')">Mes passions</button>
+          </nav>
+        </div>
+        <!-- Contenu dynamique -->
+        <div id="content" class="flex-grow">
+          <!-- Le contenu sera ajouté ici en fonction de l'onglet sélectionné -->
+        </div>
+      </div>
 </body>
 </html>
