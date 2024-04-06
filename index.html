@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./tailwindCSS/output.css" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
@@ -22,8 +23,38 @@
         </div>
         <!-- Contenu dynamique -->
         <div id="content" class="flex-grow">
-          <!-- Le contenu sera ajouté ici en fonction de l'onglet sélectionné -->
+            <div id="presentationContent">
+                <!-- Contenu de la présentation -->
+                <h2>Présentation</h2>
+                <p>Je suis un développeur concepteur d'applications junior passionné par la création d'applications web et mobiles.</p>
+            </div>
+            <div id="aboutMeContent" class="hidden">
+                <!-- Contenu À propos de moi -->
+                <h2>À propos de moi</h2>
+                <p>Je suis un passionné de technologie et j'aime apprendre de nouvelles choses.</p>
+            </div>
+            <div id="cvContent" class="hidden">
+                <!-- Contenu CV -->
+                <h2>CV</h2>
+                <p>Mon CV est disponible sur demande.</p>
+            </div>
+            <div id="projectsContent" class="hidden">
+                <!-- Contenu Projets -->
+                <h2>Projets</h2>
+                <p>Voici quelques-uns des projets sur lesquels j'ai travaillé :</p>
+                <ul>
+                    <li>Projet 1</li>
+                    <li>Projet 2</li>
+                    <li>Projet 3</li>
+                </ul>
+            </div>
+            <div id="interestsContent" class="hidden">
+                <!-- Contenu Passions -->
+                <h2>Mes passions</h2>
+                <p>En dehors du développement, j'aime la musique, les voyages et la lecture.</p>
+            </div>
         </div>
       </div>
+      <script src="app.js"></script>
 </body>
 </html>
