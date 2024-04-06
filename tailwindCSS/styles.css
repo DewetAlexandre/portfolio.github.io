@@ -1,3 +1,13 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
+.btn {
+    @apply cursor-pointer; /* Ajouter la propriété cursor-pointer pour indiquer que c'est un bouton cliquable */
+}
+
+/* Utilisez les classes Tailwind pour le style */
+.btn.selected {
+    @apply text-green-600 underline; /* Appliquer les styles Tailwind pour la couleur et le soulignement */
+    /* background-color: transparent;  Si vous souhaitez rendre le fond transparent, vous pouvez le définir ici */
+}

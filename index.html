@@ -12,33 +12,33 @@
     </div>
     <div id="app" class="min-h-screen flex flex-col">
         <div class="bg-gray-200 py-4">
-          <!-- Barre de navigation -->
-          <nav class="flex justify-center space-x-4">
-            <button id="presentationBtn" class="btn" onclick="handleTabChange('presentation')">Présentation</button>
-            <button id="aboutMeBtn" class="btn" onclick="handleTabChange('aboutMe')">À propos de moi</button>
-            <button id="cvBtn" class="btn" onclick="handleTabChange('cv')">CV</button>
-            <button id="projectsBtn" class="btn" onclick="handleTabChange('projects')">Projets</button>
-            <button id="interestsBtn" class="btn" onclick="handleTabChange('interests')">Mes passions</button>
-          </nav>
+            <!-- Barre de navigation -->
+            <nav class="flex justify-center space-x-4">
+                <a href="#" id="presentationBtn" class="btn" onclick="handleTabChange('presentation')">Présentation</a>
+                <a href="#" id="aboutMeBtn" class="btn" onclick="handleTabChange('aboutMe')">À propos de moi</a>
+                <a href="#" id="cvBtn" class="btn" onclick="handleTabChange('cv')">CV</a>
+                <a href="#" id="projectsBtn" class="btn" onclick="handleTabChange('projects')">Projets</a>
+                <a href="#" id="interestsBtn" class="btn" onclick="handleTabChange('interests')">Mes passions</a>
+            </nav>
         </div>
         <!-- Contenu dynamique -->
         <div id="content" class="flex-grow">
-            <div id="presentationContent">
+            <div id="presentationContent" class="content">
                 <!-- Contenu de la présentation -->
                 <h2>Présentation</h2>
                 <p>Je suis un développeur concepteur d'applications junior passionné par la création d'applications web et mobiles.</p>
             </div>
-            <div id="aboutMeContent" class="hidden">
+            <div id="aboutMeContent" class="content hidden">
                 <!-- Contenu À propos de moi -->
                 <h2>À propos de moi</h2>
                 <p>Je suis un passionné de technologie et j'aime apprendre de nouvelles choses.</p>
             </div>
-            <div id="cvContent" class="hidden">
+            <div id="cvContent" class="content hidden">
                 <!-- Contenu CV -->
                 <h2>CV</h2>
                 <p>Mon CV est disponible sur demande.</p>
             </div>
-            <div id="projectsContent" class="hidden">
+            <div id="projectsContent" class="content hidden">
                 <!-- Contenu Projets -->
                 <h2>Projets</h2>
                 <p>Voici quelques-uns des projets sur lesquels j'ai travaillé :</p>
@@ -48,13 +48,13 @@
                     <li>Projet 3</li>
                 </ul>
             </div>
-            <div id="interestsContent" class="hidden">
+            <div id="interestsContent" class="content hidden">
                 <!-- Contenu Passions -->
                 <h2>Mes passions</h2>
                 <p>En dehors du développement, j'aime la musique, les voyages et la lecture.</p>
             </div>
         </div>
-      </div>
-      <script src="app.js"></script>
+    </div>
+    <script src="./dist/app.js"></script>
 </body>
 </html>

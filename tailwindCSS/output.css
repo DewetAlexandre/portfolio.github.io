@@ -584,11 +584,6 @@ video {
   margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
-.bg-blue-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
-}
-
 .bg-gray-200 {
   --tw-bg-opacity: 1;
   background-color: rgb(229 231 235 / var(--tw-bg-opacity));
@@ -599,7 +594,20 @@ video {
   padding-bottom: 1rem;
 }
 
-.text-white {
+/**
+.btn {
+    user-select: none;
+}
+*/
+
+.btn {
+  cursor: pointer;
+  /* Ajouter la propriété cursor-pointer pour indiquer que c'est un bouton cliquable */
+}
+
+.btn.active {
   --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
+  color: rgb(34 197 94 / var(--tw-text-opacity));
+  text-decoration-line: underline;
+  /* Appliquer le soulignement et la couleur verte au texte */
 }
