@@ -2,20 +2,3 @@
 @tailwind components;
 @tailwind utilities;
 
-#carrousel {
-    width: 100%;
-    overflow: hidden;
-}
-
-#carrousel .flex {
-    display: flex;
-    transition: transform 0.3s ease;
-}
-
-#carrousel img {
-    width: 100%;
-}
-
-.hidden {
-    display: none;
-}
