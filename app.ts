@@ -4,13 +4,13 @@ function handleTabChange(tab: string) {
     const tabs = document.getElementsByName('navTab');
 
     contentElements.forEach(element => {
-        element.classList.add('hidden');
+        element.classList.add('md:hidden');
     });
 
     // Afficher uniquement le contenu de l'onglet sélectionné
     const selectedContent = document.getElementById(tab);
     if (selectedContent) {
-        selectedContent.classList.remove('hidden');
+        selectedContent.classList.remove('md:hidden');
     }
 
     tabs.forEach(tab => {

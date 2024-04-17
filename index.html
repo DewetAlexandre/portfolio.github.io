@@ -65,7 +65,7 @@
         <!-- Bloc droit -->
         <div class="bg-white border border-gray-300 rounded-lg lg:w-[75%] p-4 m-4 dark:bg-sombre-700 text-gray-800 dark:text-white">
             <!-- Navbar -->
-            <nav class="flex justify-around mb-8">
+            <nav class="invisible md:visible md:flex md:justify-around mb-8">
                 <a id="presentationTab" name="navTab"
                     class="border-green-500 font-semibold border-b-4 cursor-pointer"
                     onclick="handleTabChange('presentation')">Présentation</a>
@@ -85,27 +85,31 @@
             <div id="blocContenu">
                 <!-- Présentation -->
                 <div name="contenu" id="presentation">
+                    <p class="md:hidden font-bold text-center mt-12 text-2xl dark:text-white mb-8">Présentation</p>
+
+                    
                     <p class="mt-12">Passionné de l'informatique, je viens d'acquérir mon titre professionnel Concepteur
                         et Développeur d'Applications. <br>Mon projet est de devenir soit Architecte Logiciel
                         soit Formateur selon la demande disponible.
                         <br>Je recherche avant tout à gagner en expérience dans ce domaine.
                     </p>
-                    <div class="grid grid-cols-2 mt-12">
-                        <div class="border border-2 flex mr-12 mb-12">
+
+                    <div class="md:grid md:grid-cols-2 mt-12">
+                        <div class="border border-2 flex mb-8 md:mr-12 md:mb-12">
                             <img src="./images/presentation/back.png" alt="Photo" class="object-cover h-12 w-auto dark:bg-gray-300">
                             <div>
                                 <h3 class="font-semibold">Développement Back-End</h3>
                                 <p>Compétences solides en développement Back-End, notamment avec Hibernate, Java et Spring Boot. Expérience pratique dans la création d'applications fonctionnelles et performantes pour répondre aux exigences métier.</p>
                             </div>
                         </div>
-                        <div class="border border-2 flex mb-12">
+                        <div class="border border-2 flex mb-8 md:mb-12">
                             <img src="./images/presentation/front.png" alt="Photo" class="object-cover h-12 w-auto dark:bg-gray-300">
                             <div>
                                 <h3 class="font-semibold">Développement Front-End</h3>
                                 <p>Expérience pratique en développement Front-End, notamment avec Angular et Tailwind CSS. Capable de concevoir des interfaces utilisateur attrayantes et fonctionnelles en utilisant les dernières technologies pour offrir une expérience utilisateur optimale.</p>
                             </div>
                         </div>
-                        <div class="border border-2 flex mr-12">
+                        <div class="border border-2 mb-8 flex md:mr-12">
                             <img src="./images/presentation/conception.png" alt="Photo"
                                 class="object-cover h-12 w-auto dark:bg-gray-300">
                             <div>
@@ -113,7 +117,7 @@
                                 <p>Compréhension des besoins des utilisateurs avec des compétences techniques en développement. Capable de créer des solutions logicielles innovantes et intuitives, en utilisant des méthodologies de conception pour garantir une expérience utilisateur adapté aux besoins du client.</p>
                             </div>
                         </div>
-                        <div class="border border-2 flex">
+                        <div class="border border-2 mb-8 flex">
                             <img src="./images/presentation/api.png" alt="Photo" class="dark:bg-gray-300 object-cover h-12 w-auto">
                             <div>
                                 <h3 class="font-semibold">Développement d'API</h3>
@@ -124,8 +128,9 @@
                     <!-- Autres éléments selon vos spécifications -->
                 </div>
                 <!-- À propos de moi -->
-                <div name="contenu" class="hidden" id="about">
-                    <div class="flex h-1/5 mt-12">
+                <div name="contenu" class="md:hidden" id="about">
+                    <p class="md:hidden font-bold text-center mt-12 text-2xl dark:text-white mb-8">À propos de moi</p>
+                    <div class="flex h-1/5 md:mt-12">
                         <img src="./images/atouts/prevoyance.png" alt="Photo" class="object-cover h-32 w-auto">
                         <p class="ml-4 py-10">Dans la vie je suis quelqu'un qui est très prévoyant, j'anticipe ce qui
                             peut
@@ -172,8 +177,9 @@
                     </div>
                 </div>
                 <!-- CV -->
-                <div name="contenu" class="hidden" id="cv">
-                    <div class="grid grid-cols-2">
+                <div name="contenu" class="md:hidden" id="cv">
+                    <p class="md:hidden font-bold text-center mt-12 text-2xl dark:text-white mb-8">CV</p>
+                    <div class="md:grid md:grid-cols-2">
                         <div>
                             <h3 class="text-xl font-semibold">Expérience professionnelle</h3>
                             <div class="mb-4">
@@ -251,7 +257,8 @@
 
                     <!-- Autres éléments selon vos spécifications -->
                 </div>
-                <div name="contenu" class="hidden mt-4" id="projects">
+                <div name="contenu" class="md:hidden mt-4" id="projects">
+                    <p class="md:hidden font-bold text-center mt-12 text-2xl dark:text-white mb-8">Mes projets</p>
                     <div id="carousel" class="relative mt-8">
                         <!-- Structure de la popup -->
                         <div id="imagePopup" class="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-50 hidden">
@@ -266,7 +273,7 @@
                                 class="object-contain h-64 mx-auto mt-4">
                             <p class="mt-6">Application de résérvation et de mise en location de logements
                                 atypique.<br>Réalisé en PHP Laravel, HTML-CSS-JavaScript, TailwindCSS.</p>
-                            <div class="flex mt-12">
+                            <div class="md:flex mt-12">
                                 <img name="image" src="./images/projets/atypic_house/Atypik_House_1.png" alt="Projet 1"
                                     class="object-contain max-h-36 mx-auto cursor-pointer">
                                 <img name="image" src="./images/projets/atypic_house/Atypik_House_2.png" alt="Projet 1"
@@ -281,7 +288,7 @@
                                 class="object-contain h-64 mx-auto mt-4">
                             <p class="mt-6">Application fictif de gestion et de résérvation de vol pour
                                 aéroport.<br>Réalisé en Java SpringBoot - Angular - Tailwind - Keycloak<br></p>
-                            <div class="flex mt-12">
+                            <div class="md:flex mt-12">
                                 <img name="image" src="./images/projets/goldline/goldline1.png" alt="Projet 2"
                                     class="object-contain max-h-36 mx-auto  cursor-pointer">
                                 <img name="image" src="./images/projets/goldline/goldline2.png" alt="Projet 2"
@@ -296,7 +303,7 @@
                                 class="object-contain h-64 mx-auto mt-4">
                             <p class="mt-6">Application mobile pour l'association Rue du Terroir de villeneuve
                                 d'ascq.<br>Réalisé en Java SpringBoot - Angular - Tailwind - Keycloak</p>
-                            <div class="flex mt-12">
+                            <div class="md:flex mt-12">
                                 <img name="image" src="./images/projets/rue_du_terroir/Rue_Du_Terroir_1.png"
                                     alt="Projet 2" class="object-contain max-h-36 mx-auto  cursor-pointer">
                                 <img name="image" src="./images/projets/rue_du_terroir/Rue_Du_Terroir_2.png"
@@ -308,11 +315,11 @@
 
                         <!-- Flèches de navigation -->
                         <button id="prevBtn"
-                            class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-sky-600 text-white px-2 py-1 rounded-full focus:outline-none w-16 h-32 text-6xl text-center">
+                            class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-sky-600 text-white px-2 py-1 rounded-full focus:outline-none w-8 g-16 md:w-16 md:h-32 text-6xl text-center">
                             <p class="mb-4">&#8249;</p>
                         </button>
                         <button id="nextBtn"
-                            class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-sky-600 text-white px-2 py-1 rounded-full focus:outline-none  w-16 h-32 text-6xl text-center">
+                            class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-sky-600 text-white px-2 py-1 rounded-full focus:outline-none w-8 g-16 md:w-16 md:h-32 text-6xl text-center">
                             <p class="mb-4">&#8250;</p>
                         </button>
                     </div>
@@ -320,16 +327,17 @@
                 </div>
             </div>
             <!-- Mes passions -->
-            <div name="contenu" class="hidden mt-20" id="passions">
-                <div class="flex justify-center text-center">
-                    <div class="flex flex-col items-center mx-4 w-1/4">
+            <div name="contenu" class="md:hidden mt-20" id="passions">
+                <p class="md:hidden font-bold text-center mt-12 text-2xl dark:text-white mb-8">Mes passions</p>
+                <div class="md:flex justify-center text-center">
+                    <div class="flex flex-col items-center mx-4 mt-12 md:mt-0 md:w-1/4">
                         <img src="./images/passions/warhammer.png" alt="Passion 1" class="w-32 h-32 rounded-full mb-4">
                         <h3 class="font-semibold  mb-4">🎨Figurines W40k⚔️</h3>
                         <p>J'adore peindre des figurines Warhammer 40k, en particulier les Nécrons (et probablement
                             d'autres armée plus tard qui sait). C'est mon moyen de me détendre et de laisser libre cours
                             à ma créativité. J'aimerai aussi faire de futures batailles épiques !</p>
                     </div>
-                    <div class="flex flex-col items-center mx-4 w-1/4">
+                    <div class="flex flex-col items-center mx-4 mt-12 md:mt-0 md:w-1/4">
                         <img src="./images/passions/gaming.png" alt="Passion 2" class="w-32 h-32 rounded-full mb-4">
                         <h3 class="font-semibold mb-4">🎮Jeux vidéos🌟</h3>
                         <p>
@@ -338,7 +346,7 @@
                             et de vivre des aventures incroyables, que ce soit en explorant des mondes fantastiques ou
                             en affrontant mes amis dans des parties endiablées !"</p>
                     </div>
-                    <div class="flex flex-col items-center mx-4 w-1/4">
+                    <div class="flex flex-col items-center mx-4 mt-12 md:mt-0 md:w-1/4">
                         <img src="./images/passions/anime.png" alt="Passion 3" class="w-32 h-32 rounded-full mb-4">
                         <h3 class="font-semibold mb-4">📺Animés😄</h3>
                         <p>De temps en temps, je me fais des sessions chill devant des animés. C'est comme une pause

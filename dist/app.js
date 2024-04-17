@@ -4,12 +4,12 @@ function handleTabChange(tab) {
     var contentElements = document.getElementsByName('contenu');
     var tabs = document.getElementsByName('navTab');
     contentElements.forEach(function (element) {
-        element.classList.add('hidden');
+        element.classList.add('md:hidden');
     });
     // Afficher uniquement le contenu de l'onglet sélectionné
     var selectedContent = document.getElementById(tab);
     if (selectedContent) {
-        selectedContent.classList.remove('hidden');
+        selectedContent.classList.remove('md:hidden');
     }
     tabs.forEach(function (tab) {
         tab.classList.remove('border-green-500', 'font-semibold', 'border-b-4');
