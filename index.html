@@ -19,18 +19,18 @@
         </button>
     </div>
 
-    <div class="lg:flex bg-cyan-100 dark:bg-sombre-800">
+    <div class="lg:flex bg-cyan-100 dark:bg-sombre-800 dark:text-white">
         <!-- Bloc gauche -->
         <div class="border bg-white border-gray-300 rounded-lg lg:w-1/5 m-4 dark:bg-sombre-700">
             <!-- Photo, nom, métier -->
             <div class="text-center mt-8">
                 <img src="./images/photo/photo.png" alt="Photo" class="rounded-full w-40 h-40 mx-auto mb-2">
                 <h1 class="text-2xl font-bold mb-1">Dewet Alexandre</h1>
-                <p class="text-gray-600">Concepteur Développeur <br>d'applications</p>
+                <p class="text-gray-600 dark:text-white">Concepteur Développeur <br>d'applications</p>
             </div>
             <!-- Boutons sociaux -->
             <div class="flex justify-around mt-12">
-                <a href="https://github.com/DewetAlexandre" class="text-5xl text-gray-800 hover:scale-120">
+                <a href="https://github.com/DewetAlexandre" class="text-5xl text-gray-800 dark:text-white hover:scale-120">
                     <i class="fab fa-github fa-lg"></i>
                 </a>
                 <a href="https://gitlab.com/AlexandreDewet" class="text-5xl text-orange-500 hover:scale-120">
@@ -41,12 +41,12 @@
                 </a>
             </div>
             <!-- Adresse -->
-            <div class="text-center mt-6 md:mt-12">
+            <div class="text-center mt-6 md:mt-12 text-gray-800 dark:text-white">
 
-                <p class="text-gray-800"><i class="fas fa-map-marker-alt text-green-600 text-2xl mr-2"></i>Bourbourg,
+                <p ><i class="fas fa-map-marker-alt text-green-600 text-2xl mr-2"></i>Bourbourg,
                     Nord
                 </p>
-                <p class="mt-4 text-gray-800">dewetalexandre59@gmail.com</p>
+                <p class="mt-4">dewetalexandre59@gmail.com</p>
             </div>
 
             <!-- Boutons d'action -->
@@ -63,19 +63,19 @@
         </div>
 
         <!-- Bloc droit -->
-        <div class="bg-white border border-gray-300 rounded-lg lg:w-[75%] p-4 m-4 dark:bg-sombre-700">
+        <div class="bg-white border border-gray-300 rounded-lg lg:w-[75%] p-4 m-4 dark:bg-sombre-700 text-gray-800 dark:text-white">
             <!-- Navbar -->
             <nav class="flex justify-around mb-8">
                 <a id="presentationTab" name="navTab"
-                    class="text-gray-800 border-green-500 font-semibold border-b-4 cursor-pointer"
+                    class="border-green-500 font-semibold border-b-4 cursor-pointer"
                     onclick="handleTabChange('presentation')">Présentation</a>
-                <a id="aboutTab" name="navTab" class="text-gray-800 cursor-pointer" onclick="handleTabChange('about')">À
+                <a id="aboutTab" name="navTab" class="cursor-pointer" onclick="handleTabChange('about')">À
                     propos de
                     moi</a>
-                <a id="cvTab" name="navTab" class="text-gray-800 cursor-pointer" onclick="handleTabChange('cv')">CV</a>
-                <a id="projectsTab" name="navTab" class="text-gray-800 cursor-pointer"
+                <a id="cvTab" name="navTab" class="cursor-pointer" onclick="handleTabChange('cv')">CV</a>
+                <a id="projectsTab" name="navTab" class="cursor-pointer"
                     onclick="handleTabChange('projects')">Projets</a>
-                <a id="passionsTab" name="navTab" class="text-gray-800 cursor-pointer"
+                <a id="passionsTab" name="navTab" class="cursor-pointer"
                     onclick="handleTabChange('passions')">Mes
                     passions</a>
             </nav>
@@ -92,31 +92,32 @@
                     </p>
                     <div class="grid grid-cols-2 mt-12">
                         <div class="border border-2 flex mr-12 mb-12">
-                            <img src="./images/presentation/back.png" alt="Photo" class="object-cover h-12 w-auto">
+                            <img src="./images/presentation/back.png" alt="Photo" class="object-cover h-12 w-auto dark:bg-gray-300">
                             <div>
                                 <h3 class="font-semibold">Développement Back-End</h3>
-                                <p>qzdrsgrdeg rdhse qerhqerheqrh qerh qhre eqrheqhreqh qerhqerh</p>
+                                <p>Compétences solides en développement Back-End, notamment avec Hibernate, Java et Spring Boot. Expérience pratique dans la création d'applications fonctionnelles et performantes pour répondre aux exigences métier.</p>
                             </div>
                         </div>
                         <div class="border border-2 flex mb-12">
-                            <img src="./images/presentation/front.png" alt="Photo" class="object-cover h-12 w-auto">
+                            <img src="./images/presentation/front.png" alt="Photo" class="object-cover h-12 w-auto dark:bg-gray-300">
                             <div>
                                 <h3 class="font-semibold">Développement Front-End</h3>
-                                <p>qzdrsgrdeg rdhse qerhqerheqrh qerh qhre eqrheqhreqh qerhqerh</p>
+                                <p>Expérience pratique en développement Front-End, notamment avec Angular et Tailwind CSS. Capable de concevoir des interfaces utilisateur attrayantes et fonctionnelles en utilisant les dernières technologies pour offrir une expérience utilisateur optimale.</p>
                             </div>
                         </div>
                         <div class="border border-2 flex mr-12">
-                            <img src="./images/presentation/conception.png" alt="Photo" class="object-cover h-12 w-auto">
+                            <img src="./images/presentation/conception.png" alt="Photo"
+                                class="object-cover h-12 w-auto dark:bg-gray-300">
                             <div>
                                 <h3 class="font-semibold">Conception d'applications</h3>
-                                <p>qzdrsgrdeg rdhse qerhqerheqrh qerh qhre eqrheqhreqh qerhqerh</p>
+                                <p>Compréhension des besoins des utilisateurs avec des compétences techniques en développement. Capable de créer des solutions logicielles innovantes et intuitives, en utilisant des méthodologies de conception pour garantir une expérience utilisateur adapté aux besoins du client.</p>
                             </div>
                         </div>
                         <div class="border border-2 flex">
-                            <img src="./images/presentation/api.png" alt="Photo" class="object-cover h-12 w-auto">
+                            <img src="./images/presentation/api.png" alt="Photo" class="dark:bg-gray-300 object-cover h-12 w-auto">
                             <div>
                                 <h3 class="font-semibold">Développement d'API</h3>
-                                <p>qzdrsgrdeg rdhse qerhqerheqrh qerh qhre eqrheqhreqh qerhqerh</p>
+                                <p>Utilisation des frameworks tels que Spring Boot pour créer des services web performants et évolutifs. Capable de concevoir et implémenter des API robustes et bien documentées, garantissant une communication efficace entre les différentes composantes d'une application.</p>
                             </div>
                         </div>
                     </div>
@@ -126,7 +127,8 @@
                 <div name="contenu" class="hidden" id="about">
                     <div class="flex h-1/5 mt-12">
                         <img src="./images/atouts/prevoyance.png" alt="Photo" class="object-cover h-32 w-auto">
-                        <p class="ml-4 py-10">Dans la vie je suis quelqu'un qui est très prévoyant, j'anticipe ce qui peut
+                        <p class="ml-4 py-10">Dans la vie je suis quelqu'un qui est très prévoyant, j'anticipe ce qui
+                            peut
                             être des
                             obstacles voir des défis à venir. Pour le cas d'un projet, je prend <br>très au sérieux la
                             conception.
@@ -176,38 +178,38 @@
                             <h3 class="text-xl font-semibold">Expérience professionnelle</h3>
                             <div class="mb-4">
                                 <p>CONCEPTEUR DEVELOPPEUR D'APPLICATIONS</p>
-                                <p class="text-gray-700 text-sm">08/2023 - 11/2023 à INSY2S Lille</p>
+                                <p class="text-gray-700 dark:text-gray-300 text-sm">08/2023 - 11/2023 à INSY2S Lille</p>
                             </div>
                             <div class="mb-4">
                                 <p>DEVELOPPEUR WEB / WEB MOBILE</p>
-                                <p class="text-gray-700 text-sm">06/2022 - 09/2022 à INSY2S Lille</p>
+                                <p class="text-gray-700 dark:text-gray-300 text-sm">06/2022 - 09/2022 à INSY2S Lille</p>
                             </div>
                             <div class="mb-4">
                                 <p>INFORMATIQUE</p>
-                                <p class="text-gray-700 text-sm">12/2018 à Infoplan Grande-Synthe</p>
+                                <p class="text-gray-700 dark:text-gray-300 text-sm">12/2018 à Infoplan Grande-Synthe</p>
                             </div>
                             <div class="mb-4">
                                 <p>EMPLOYÉ COMMERCIAL</p>
-                                <p class="text-gray-700 text-sm">04/2019 - 05/2019 à Kandy Bourbourg</p>
+                                <p class="text-gray-700 dark:text-gray-300 text-sm">04/2019 - 05/2019 à Kandy Bourbourg</p>
                             </div>
                         </div>
                         <div>
                             <h3 class="text-xl font-semibold">Formation</h3>
                             <div class="mb-4">
                                 <p>Titre professionnel Concepteur Développeur d'Applications</p>
-                                <p class="text-gray-700 text-sm">10/2022 - 11/2023 à l'AFPA de Roubaix</p>
+                                <p class="text-gray-700 dark:text-gray-300 text-sm">10/2022 - 11/2023 à l'AFPA de Roubaix</p>
                             </div>
                             <div class="mb-4">
                                 <p>TITRE PROFESSIONNEL Développeur web et web mobile</p>
-                                <p class="text-gray-700 text-sm">02/2022 - 10/2022 à l'AFPA de Roubaix</p>
+                                <p class="text-gray-700 dark:text-gray-300 text-sm">02/2022 - 10/2022 à l'AFPA de Roubaix</p>
                             </div>
                             <div class="mb-4">
                                 <p>1er année de BTS Services Informatique aux Organisations</p>
-                                <p class="text-gray-700 text-sm">2020 - 2021 avec le CNED à Distance</p>
+                                <p class="text-gray-700 dark:text-gray-300 text-sm">2020 - 2021 avec le CNED à Distance</p>
                             </div>
                             <div class="mb-4">
                                 <p>BAC PRO COMMERCE EN ALTERNANCE</p>
-                                <p class="text-gray-700 text-sm">09/2012 - 02/2015 à Altern'emploi de
+                                <p class="text-gray-700 dark:text-gray-300 text-sm">09/2012 - 02/2015 à Altern'emploi de
                                     Coudekerque-Branche</p>
                             </div>
                         </div>
@@ -251,7 +253,13 @@
                 </div>
                 <div name="contenu" class="hidden mt-4" id="projects">
                     <div id="carousel" class="relative mt-8">
-
+                        <!-- Structure de la popup -->
+                        <div id="imagePopup" class="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-50 hidden">
+                            <div class="bg-white p-4 rounded-lg overflow-y-auto max-h-full">
+                                <img id="popupImage" src="" alt="Popup Image" class="mx-auto max-h-screen-4/5">
+                                <button id="closePopup" class="block mx-auto mt-4 bg-red-500 text-white px-4 py-2 rounded-lg">Fermer</button>
+                            </div>
+                        </div>                    
                         <div name="projetSlide" class="text-center mx-auto w-full">
                             <h1 class="text-2xl font-semibold">Atypik House</h1>
                             <img src="./images/projets/atypic_house/Atypic_House_Main.png" alt="Projet 1"
@@ -260,11 +268,11 @@
                                 atypique.<br>Réalisé en PHP Laravel, HTML-CSS-JavaScript, TailwindCSS.</p>
                             <div class="flex mt-12">
                                 <img name="image" src="./images/projets/atypic_house/Atypik_House_1.png" alt="Projet 1"
-                                    class="object-contain max-h-36 mx-auto cursor-pointer transition-transform duration-300 transform hover:scale-120">
+                                    class="object-contain max-h-36 mx-auto cursor-pointer">
                                 <img name="image" src="./images/projets/atypic_house/Atypik_House_2.png" alt="Projet 1"
-                                    class="object-contain max-h-36 mx-auto">
+                                    class="object-contain max-h-36 mx-auto  cursor-pointer">
                                 <img name="image" src="./images/projets/atypic_house/Atypik_House_3.png" alt="Projet 1"
-                                    class="object-contain max-h-36 mx-auto">
+                                    class="object-contain max-h-36 mx-auto  cursor-pointer">
                             </div>
                         </div>
                         <div name="projetSlide" class="hidden text-center mx-auto w-full">
@@ -275,11 +283,11 @@
                                 aéroport.<br>Réalisé en Java SpringBoot - Angular - Tailwind - Keycloak<br></p>
                             <div class="flex mt-12">
                                 <img name="image" src="./images/projets/goldline/goldline1.png" alt="Projet 2"
-                                    class="object-contain max-h-36 mx-auto">
+                                    class="object-contain max-h-36 mx-auto  cursor-pointer">
                                 <img name="image" src="./images/projets/goldline/goldline2.png" alt="Projet 2"
-                                    class="object-contain max-h-36 mx-auto">
+                                    class="object-contain max-h-36 mx-auto  cursor-pointer">
                                 <img name="image" src="./images/projets/goldline/goldline3.png" alt="Projet 2"
-                                    class="object-contain max-h-36 mx-auto">
+                                    class="object-contain max-h-36 mx-auto  cursor-pointer">
                             </div>
                         </div>
                         <div name="projetSlide" class="hidden text-center mx-auto w-full">
@@ -290,11 +298,11 @@
                                 d'ascq.<br>Réalisé en Java SpringBoot - Angular - Tailwind - Keycloak</p>
                             <div class="flex mt-12">
                                 <img name="image" src="./images/projets/rue_du_terroir/Rue_Du_Terroir_1.png"
-                                    alt="Projet 2" class="object-contain max-h-36 mx-auto">
+                                    alt="Projet 2" class="object-contain max-h-36 mx-auto  cursor-pointer">
                                 <img name="image" src="./images/projets/rue_du_terroir/Rue_Du_Terroir_2.png"
-                                    alt="Projet 2" class="object-contain max-h-36 mx-auto">
+                                    alt="Projet 2" class="object-contain max-h-36 mx-auto  cursor-pointer">
                                 <img name="image" src="./images/projets/rue_du_terroir/Rue_Du_Terroir_3.png"
-                                    alt="Projet 2" class="object-contain max-h-36 mx-auto">
+                                    alt="Projet 2" class="object-contain max-h-36 mx-auto  cursor-pointer">
                             </div>
                         </div>
 
